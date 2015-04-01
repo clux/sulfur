@@ -20,10 +20,10 @@
     "coveralls": "npm run coverage | coveralls"
   },
   "dependencies": {
-    "dye": "^0.2.1",
-    "smell": "^1.0.0"
+    "dye": "^0.2.1"
   },
   "devDependencies": {
+    "smell": "^1.0.0",
     "nodeunit": "^0.9.1",
     "jscoverage": "^0.5.9",
     "coveralls": "^2.11.2"
