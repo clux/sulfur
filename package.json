@@ -7,7 +7,11 @@
     "type": "git",
     "url": "clux/sulfur"
   },
-  "keywords": [],
+  "keywords": [
+    "smell",
+    "clang",
+    "format"
+  ],
   "main": "sulfur.js",
   "scripts": {
     "test": "nodeunit --reporter=verbose test/*.js",
