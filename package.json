@@ -1,0 +1,31 @@
+{
+  "name": "sulfur",
+  "description": "Absorb log smells in your application",
+  "author": "Eirik Albrigtsen <analsandblaster@gmail.com>",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "clux/sulfur"
+  },
+  "keywords": [],
+  "main": "sulfur.js",
+  "scripts": {
+    "test": "nodeunit --reporter=verbose test/*.js",
+    "precoverage": "jscoverage sulfur.js",
+    "coverage": "SULFUR_COV=1 nodeunit --reporter=lcov test/*.js",
+    "coveralls": "npm run coverage | coveralls"
+  },
+  "dependencies": {
+    "dye": "^0.2.1",
+    "smell": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodeunit": "^0.9.1",
+    "jscoverage": "^0.5.9",
+    "coveralls": "^2.11.2"
+  },
+  "bugs": {
+    "url": "http://github.com/clux/sulfur/issues"
+  },
+  "license": "MIT"
+}
