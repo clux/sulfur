@@ -4,7 +4,7 @@
 [![dependency status](https://david-dm.org/clux/sulfur.svg)](https://david-dm.org/clux/sulfur)
 [![coverage status](http://img.shields.io/coveralls/clux/sulfur.svg)](https://coveralls.io/r/clux/sulfur)
 
-A rudimentary and oppinionated application logger that can only capture logs from the event emitter module [smell](https://npmjs.org/package/smell).
+A rudimentary and opinionated application logger that can only capture logs from the event emitter module [smell](https://npmjs.org/package/smell).
 
 ## Format
 Output format is styled after clang's compile output. The events map onto the basic `console` functions:
