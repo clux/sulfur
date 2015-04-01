@@ -1,4 +1,6 @@
-var sulfur = require('../');
+var sulfur = process.env.SMELL_COV ?
+  require('../sulfur-cov.js'):
+  require('../');
 var smell = require('smell')();
 
 exports.output = function (t) {
@@ -6,8 +8,5 @@ exports.output = function (t) {
   smell.info('the following should be noted');
   smell.warn('this is ambiguous');
   smell.error('this is wrong');
-
-
-
   t.done();
 };
