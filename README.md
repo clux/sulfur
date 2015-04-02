@@ -4,10 +4,10 @@
 [![dependency status](https://david-dm.org/clux/sulfur.svg)](https://david-dm.org/clux/sulfur)
 [![coverage status](http://img.shields.io/coveralls/clux/sulfur.svg)](https://coveralls.io/r/clux/sulfur)
 
-A rudimentary and opinionated application logger that can only capture logs from the event emitter module [smell](https://npmjs.org/package/smell).
+A rudimentary and unconfigurable application logger that can only absorb logs from the event emitter module [smell](https://npmjs.org/package/smell).
 
 ## Format
-Output format is styled after clang's compile output. The events map onto the basic `console` functions:
+Output format is styled after clang's compile output. The smell events map onto the basic `console` functions:
 
 ```js
 var fn = {
@@ -20,7 +20,7 @@ var fn = {
 Consequently, `warn` and `error` events go through `stderr`.
 
 ## Usage
-Require sulfur in your application, then absorb the smelly compounds (yes, really committing to the analogy here) exposed from libraries:
+Require sulfur in your application, then absorb the smells exposed from libraries:
 
 ```js
 var sulfur = require('sulfur');
