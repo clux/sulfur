@@ -15,5 +15,5 @@ var error = function (name, msg) {
 exports.absorb = function (smell, name) {
   smell.on('info', info.bind(null, name));
   smell.on('warn', warn.bind(null, name));
-  smell.on('error', error.bind(null, name));
+  smell.on('err', error.bind(null, name));
 };

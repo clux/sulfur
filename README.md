@@ -13,11 +13,11 @@ Output format is styled after clang's compile output. The smell events map onto 
 var fn = {
   info: console.log,
   warn: console.warn,
-  error: console.error
+  err: console.error
 }[eventName];
 ```
 
-Consequently, `warn` and `error` events go through `stderr`.
+Consequently, `warn` and `err` events go through `stderr`.
 
 ## Usage
 Require sulfur in your application, then absorb the smells exposed from libraries:
