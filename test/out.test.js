@@ -1,6 +1,4 @@
-var sulfur = process.env.SULFUR_COV ?
-  require('../sulfur-cov.js'):
-  require('../');
+var sulfur = require(process.env.SULFUR_COV ? '../sulfur-cov' : '../');
 var smell = require('smell')();
 
 exports.output = function (t) {
