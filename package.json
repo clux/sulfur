@@ -16,8 +16,7 @@
   "scripts": {
     "test": "nodeunit --reporter=verbose test/*.js",
     "precoverage": "jscoverage sulfur.js",
-    "coverage": "SULFUR_COV=1 nodeunit --reporter=lcov test/*.js",
-    "coveralls": "npm run coverage | coveralls"
+    "coverage": "SULFUR_COV=1 nodeunit --reporter=lcov test/*.js"
   },
   "dependencies": {
     "dye": "^1.0.0"
@@ -25,8 +24,7 @@
   "devDependencies": {
     "smell": "^2.0.0",
     "nodeunit": "^0.9.1",
-    "jscoverage": "^0.5.9",
-    "coveralls": "^2.11.2"
+    "jscoverage": "^0.5.9"
   },
   "bugs": {
     "url": "http://github.com/clux/sulfur/issues"
