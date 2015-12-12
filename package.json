@@ -14,17 +14,17 @@
   ],
   "main": "sulfur.js",
   "scripts": {
-    "test": "nodeunit --reporter=verbose test/*.js",
-    "precoverage": "jscoverage sulfur.js",
-    "coverage": "SULFUR_COV=1 nodeunit --reporter=lcov test/*.js"
+    "test": "bndg test/*.js",
+    "precoverage": "istanbul cover bndg test/*.test.js",
+    "coverage": "cat coverage/lcov.info && rm -rf coverage"
   },
   "dependencies": {
     "dye": "^1.0.0"
   },
   "devDependencies": {
-    "smell": "^2.0.0",
-    "nodeunit": "^0.9.1",
-    "jscoverage": "^0.5.9"
+    "bandage": "^0.4.0",
+    "istanbul": "^0.4.1",
+    "smell": "^2.0.6"
   },
   "bugs": {
     "url": "http://github.com/clux/sulfur/issues"
